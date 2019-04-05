@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Png 2 Moneys</title>
+<script type="text/javascript">
+
+function submit(e)
+{
+	console.log("submitted");
+	e.preventDefault();
+	document.getElementById('output').innerText = "*gives u eight hundred moneys*";
+	return false;
+}
+
+</script>
+</head>
+<body>
+<form id="form">
+	IMAGE: <input type="file" name="pic" accept="*"></input><br />
+	<input type="submit" />
+	
+	<p id="output"></p>
+</form>	
+
+
+<script>
+
+document.getElementById('form').onsubmit = submit;
+
+</script>
+</body>
+</html>
